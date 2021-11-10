@@ -48,7 +48,7 @@ import urllib.request
 import shutil
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("../../")
+ROOT_DIR = os.path.abspath("/content/drive/MyDrive/College_paper/Mask_RCNN")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
@@ -424,7 +424,7 @@ if __name__ == '__main__':
                         metavar="<image count>",
                         help='Images to use for evaluation (default=500)')
     parser.add_argument('--download', required=False,
-                        default=False,
+                        default=True,
                         metavar="<True|False>",
                         help='Automatically download and unzip MS-COCO files (default=False)',
                         type=bool)
